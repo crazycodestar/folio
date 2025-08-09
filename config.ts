@@ -84,7 +84,6 @@ const config: PortfolioConfig = {
   },
   techStack: [
     "Nextjs",
-    "Solidjs",
     "Nodejs",
     "Hono",
     "express",
@@ -93,7 +92,7 @@ const config: PortfolioConfig = {
     "Postgres",
     "Mysql",
     "MongoDB",
-    "Amazon AWS",
+    "AWS",
     "Clouldflare",
   ],
   cta: {
