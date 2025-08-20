@@ -43,7 +43,7 @@ export interface PortfolioConfig {
   projects: {
     title: string;
     description: string;
-    image: string[];
+    image: [string, string, string];
     website?: string;
     github?: string;
     features: string[];
@@ -106,10 +106,10 @@ const config: PortfolioConfig = {
     },
   },
   social: {
-    github: "https://github.com/yourusername",
-    linkedin: "https://linkedin.com/in/yourusername",
-    twitter: "https://twitter.com/yourusername",
-    email: "your.email@example.com",
+    github: "https://github.com/crazycodestar",
+    linkedin: "https://www.linkedin.com/in/olalekan-adekanmbi-a8623a246/",
+    twitter: "https://x.com/_xyzl3kan",
+    email: "olamilekanadekanmbi@gmail.com",
   },
   resume: {
     url: "/resume.pdf",
@@ -121,14 +121,12 @@ const config: PortfolioConfig = {
       description:
         "A set of tools for converting views into customers. I work on the backend and frontend of the project.",
       image: [
-        "/convertlykit.png",
-        "/convertlykit.png",
-        "/convertlykit.png",
-        "/convertlykit.png",
-        "/convertlykit.png",
+        "/convertlykit-large.png",
+        "/convertlykit-small-1.png",
+        "/convertlykit-small-2.png",
       ],
       website: "https://convertlykit.com",
-      github: "https://github.com/convertlykit/convertlykit",
+      // github: "https://github.com/convertlykit/convertlykit",
       features: [
         "Multi-tenant Architecture",
         "Builtin Website builder",
@@ -142,14 +140,12 @@ const config: PortfolioConfig = {
       description:
         "An app that helps tenants and landlords communicate seamlessly. I was responsible for the app development using React Native and Expo",
       image: [
-        "/convertlykit.png",
-        "/convertlykit.png",
-        "/convertlykit.png",
-        "/convertlykit.png",
-        "/convertlykit.png",
+        "/tenant-large.png",
+        "/tenant-small-1.png",
+        "/tenant-small-2.png",
       ],
-      website: "https://tenant-management.com",
-      github: "https://github.com/tenant-management/tenant-management",
+      // website: "https://tenant-management.com",
+      // github: "https://github.com/tenant-management/tenant-management",
       features: [
         "Application Development",
         "Database Architecture",
@@ -161,14 +157,12 @@ const config: PortfolioConfig = {
       description:
         "A Learning Management System. Extended their PHP based Career management tool to integrate with a custom LMS I built with Nextjs",
       image: [
-        "/convertlykit.png",
-        "/convertlykit.png",
-        "/convertlykit.png",
-        "/convertlykit.png",
-        "/convertlykit.png",
+        "/ribara-large.png",
+        "/ribara-small-1.png",
+        "/ribara-small-2.png",
       ],
-      website: "https://ribara.com",
-      github: "https://github.com/ribara/ribara",
+      website: "https://platform.ribara.com",
+      // github: "https://github.com/ribara/ribara",
       features: [
         "Custom Learning Management System",
         "Integration with PHP based internal system",
@@ -180,14 +174,12 @@ const config: PortfolioConfig = {
       description:
         "A tool that tests your temperament to help you find the best career path for you. I was responsible for the backend and frontend and integration with the AI model built by my colleague",
       image: [
-        "/convertlykit.png",
-        "/convertlykit.png",
-        "/convertlykit.png",
-        "/convertlykit.png",
-        "/convertlykit.png",
+        "/career-suit-large.png",
+        "/career-suit-small-1.png",
+        "/career-suit-small-2.png",
       ],
       website: "https://careersuitsme.com",
-      github: "https://github.com/careersuitsme/careersuitsme",
+      // github: "https://github.com/careersuitsme/careersuitsme",
       features: [
         "AI Powered Temperament Test",
         "Integration with custom AI model",

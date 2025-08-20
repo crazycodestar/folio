@@ -1,7 +1,7 @@
 import Projects from "@/components/main/Projects";
 import HeroSection from "../components/main/HeroSection";
 import Navigation from "../components/main/Navigation";
-import BlogPosts from "@/components/main/BlogPosts";
+// import BlogPosts from "@/components/main/BlogPosts";
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
       <Navigation />
       <HeroSection />
       <Projects />
-      <BlogPosts />
+      {/* <BlogPosts /> */}
     </div>
   );
 }

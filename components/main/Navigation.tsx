@@ -8,7 +8,7 @@ export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
+    <nav className="fixed top-0 w-full z-50 bg-gradient-to-b from-background/50 to-background/0 backdrop-blur-lg">
       <Container>
         <div className="flex justify-between items-center h-16">
           {/* Left side - Full Name */}

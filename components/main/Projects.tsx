@@ -11,7 +11,7 @@ export default function Projects() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
             Featured{" "}
             <span className="bg-orange-600 bg-clip-text text-transparent">
-              Projects
+              Work
             </span>
           </h2>
           <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
@@ -113,57 +113,40 @@ function ProjectCard({
   );
 }
 
-function BentoGrid({ images }: { images: string[] }) {
+function BentoGrid({ images }: { images: [string, string, string] }) {
   return (
-    <div className="grid grid-cols-4 grid-rows-4 gap-2 h-80 w-full">
+    <div className="flex flex-col gap-2 w-full">
       {/* Large image - spans 2x2 */}
-      <div className="col-span-2 row-span-2 relative overflow-hidden rounded-lg bg-gradient-to-br from-orange-600/20 to-transparent">
-        <Image
-          src={images[0]}
-          alt="Project screenshot"
-          fill
-          className="object-cover"
-        />
-      </div>
 
-      {/* Medium image - spans 2x1 */}
-      <div className="col-span-2 row-span-1 relative overflow-hidden rounded-lg bg-gradient-to-br from-orange-600/10 to-transparent">
-        <Image
-          src={images[1]}
-          alt="Project screenshot"
-          fill
-          className="object-cover"
-        />
-      </div>
+      <Image
+        src={images[0]}
+        alt="Project screenshot"
+        width={1600}
+        height={900}
+        className="object-cover w-full"
+      />
 
-      {/* Small image - spans 1x1 */}
-      <div className="col-span-1 row-span-1 relative overflow-hidden rounded-lg bg-gradient-to-br from-orange-600/5 to-transparent">
-        <Image
-          src={images[2]}
-          alt="Project screenshot"
-          fill
-          className="object-cover"
-        />
-      </div>
-
-      {/* Small image - spans 1x1 */}
-      <div className="col-span-1 row-span-1 relative overflow-hidden rounded-lg bg-gradient-to-br from-orange-600/5 to-transparent">
-        <Image
-          src={images[3]}
-          alt="Project screenshot"
-          fill
-          className="object-cover"
-        />
-      </div>
-
-      {/* Medium image - spans 2x1 */}
-      <div className="col-span-2 row-span-1 relative overflow-hidden rounded-lg bg-gradient-to-br from-orange-600/10 to-transparent">
-        <Image
-          src={images[4]}
-          alt="Project screenshot"
-          fill
-          className="object-cover"
-        />
+      <div className="flex flex-row gap-2">
+        {/* Medium image - spans 2x1 */}
+        <div>
+          <Image
+            src={images[1]}
+            alt="Project screenshot"
+            width={400}
+            height={300}
+            className="object-cover"
+          />
+        </div>
+        {/* Small image - spans 1x1 */}
+        <div>
+          <Image
+            src={images[2]}
+            alt="Project screenshot"
+            width={400}
+            height={300}
+            className="object-cover"
+          />
+        </div>
       </div>
     </div>
   );
