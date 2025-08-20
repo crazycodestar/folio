@@ -20,7 +20,7 @@ export default function HeroSection() {
           <p className="text-lg sm:text-xl text-foreground/70 mb-2 max-w-3xl mx-auto leading-relaxed">
             A passionate{" "}
             <span className="font-semibold text-foreground">
-              {config.personal.title}
+              {config.personal.title}.
             </span>{" "}
             {config.personal.subtitle}
           </p>

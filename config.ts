@@ -11,6 +11,7 @@ export interface PortfolioConfig {
   metadata: {
     title: string;
     description: string;
+    siteUrl: string;
   };
   navigation: {
     brand: string;
@@ -73,6 +74,7 @@ const config: PortfolioConfig = {
     title: "Portfolio | Olalekan Adekanmbi",
     description:
       "Full-stack developer passionate about creating innovative digital experiences",
+    siteUrl: "https://ofolio.netlify.app/",
   },
   navigation: {
     brand: "Portfolio",

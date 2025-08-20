@@ -34,14 +34,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://olalekanadekanmbi.com"),
+  metadataBase: new URL(config.metadata.siteUrl),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://olalekanadekanmbi.com",
+    url: config.metadata.siteUrl,
     siteName: config.personal.name,
     title: config.metadata.title,
     description: config.metadata.description,
@@ -108,7 +108,7 @@ export default function RootLayout({
     name: config.personal.name,
     jobTitle: config.personal.title,
     description: config.metadata.description,
-    url: "https://olalekanadekanmbi.com",
+    url: config.metadata.siteUrl,
     image: config.personal.image,
     sameAs: [
       config.social?.github,
@@ -137,14 +137,14 @@ export default function RootLayout({
     "@type": "WebSite",
     name: config.personal.name,
     description: config.metadata.description,
-    url: "https://olalekanadekanmbi.com",
+    url: config.metadata.siteUrl,
     author: {
       "@type": "Person",
       name: config.personal.name,
     },
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://olalekanadekanmbi.com/search?q={search_term_string}",
+      target: `${config.metadata.siteUrl}/search?q={search_term_string}`,
       "query-input": "required name=search_term_string",
     },
   };
