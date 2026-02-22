@@ -63,17 +63,18 @@ const config: PortfolioConfig = {
   personal: {
     name: "Olalekan Adekanmbi",
     initials: "OA",
-    title: "Full-Stack Developer",
+    title: "Design Engineer",
     description:
-      "Full-stack developer passionate about creating innovative digital experiences",
-    subtitle: "I love building innovative digital experiences",
-    experience: "5+ years of experience in fullstack development",
+      "Design Engineer passionate about creating innovative digital experiences",
+    subtitle:
+      "I love building delightful user experiences that bring users joy",
+    experience: "5+ years as a designer and developer",
     image: "/profile.png",
   },
   metadata: {
     title: "Portfolio | Olalekan Adekanmbi",
     description:
-      "Full-stack developer passionate about creating innovative digital experiences",
+      "Design Engineer passionate about creating innovative digital experiences",
     siteUrl: "https://ofolio.netlify.app/",
   },
   navigation: {
@@ -85,17 +86,15 @@ const config: PortfolioConfig = {
     ],
   },
   techStack: [
-    "Nextjs",
-    "Nodejs",
-    "Hono",
-    "express",
-    "Prisma",
-    "Drizzle",
-    "Postgres",
-    "Mysql",
-    "MongoDB",
-    "AWS",
-    "Clouldflare",
+    "Figma",
+    "React",
+    "Next.js",
+    "Framer Motion",
+    "Tailwind CSS",
+    "Typescript",
+    "Shadcn UI",
+    "Node.js",
+    "Express",
   ],
   cta: {
     primary: {
